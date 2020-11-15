@@ -1,0 +1,55 @@
+---
+extends:
+  - "plugin:react/recommended"
+  - "plugin:@typescript-eslint/recommended"
+  - "prettier/@typescript-eslint"
+  - "plugin:prettier/recommended"
+ignorePatterns:
+  - dist/
+  - node_modules/
+overrides:
+  - files:
+      - "webpack*.config.js"
+    rules:
+      "@typescript-eslint/no-var-requires": "off"
+parser: "@typescript-eslint/parser"
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2018
+  sourceType: module
+plugins:
+  - import
+  - sort-keys-fix
+  - typescript-sort-keys
+rules:
+  import/named: "error"
+  import/namespace: "error"
+  import/default: "error"
+  import/export: "error"
+  import/no-named-as-default: "warn"
+  import/no-named-as-default-member: "warn"
+  import/no-duplicates: "warn"
+  import/order:
+    - warn
+    - alphabetize:
+        order: "asc"
+        caseInsensitive: true
+      groups:
+        - ["builtin", "external"]
+        - "internal"
+        - ["index", "parent", "sibling"]
+      newlines-between: "always"
+  prettier/prettier: "warn"
+  sort-keys:
+    - "warn"
+    - asc
+    - caseSensitive: false
+      natural: true
+  sort-keys-fix/sort-keys-fix: "warn"
+  typescript-sort-keys/interface: "warn"
+  typescript-sort-keys/string-enum: "warn"
+  react/prop-types: "off"
+settings:
+  react:
+    version: detect

@@ -1,6 +1,6 @@
 {
   "name": "@jbsulli/config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Personal ESLint, Prettier, etc. configs",
   "main": "index.js",
   "repository": "https://github.com/jbsulli/configs.git",

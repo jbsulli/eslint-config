@@ -12,6 +12,10 @@ jobs:
         with:
           node-version: 14.x
           registry-url: "https://registry.npmjs.org"
+      - run: yarn install --frozen-lockfile
+        env:
+          CI: true
+      - run: yarn lint
       - run: npm publish --access public
         env:
           CI: true

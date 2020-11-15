@@ -5,19 +5,19 @@ Repository of configs
 ## ESLint & Prettier
 
 ```
-yarn add --dev eslint prettier @jbsulli/config
+yarn add --dev eslint prettier @jbsulli/eslint-config
 ```
 
 Example `package.json`:
 ```json
 {
   "name": "my-app",
-  "prettier": "@jbsulli/config/prettier",
+  "prettier": "@jbsulli/eslint-config/prettier",
   "eslintConfig": {
-    "extends": ["@jbsulli/config/eslint"]
+    "extends": ["@jbsulli/eslint-config"]
   },
   "devDependencies": {
-    "@jbsulli/config": "*",
+    "@jbsulli/eslint-config": "*",
     "eslint": "^7.13.0",
     "prettier": "^2.1.2"
   }

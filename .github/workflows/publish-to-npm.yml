@@ -1,4 +1,4 @@
-name: publish-to-npm
+name: Publish to NPM
 on:
   release:
     types: [created]

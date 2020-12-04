@@ -1,6 +1,6 @@
 {
   "name": "@jbsulli/eslint-config",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Personal ESLint, Prettier, etc. configs",
   "main": "eslint.yml",
   "repository": "https://github.com/jbsulli/eslint-configs.git",

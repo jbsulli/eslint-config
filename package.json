@@ -1,6 +1,6 @@
 {
   "name": "@jbsulli/eslint-config",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Personal ESLint, Prettier, etc. configs",
   "main": "eslint.yml",
   "repository": "https://github.com/jbsulli/eslint-configs.git",
@@ -10,16 +10,16 @@
     "lint": "echo 'console.log(\"hello world!\");' | eslint --config eslint.yml --stdin"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.7.0",
-    "@typescript-eslint/parser": "^4.7.0",
-    "eslint": "^7.13.0",
-    "eslint-config-prettier": "^6.15.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-sort-keys-fix": "^1.1.1",
     "eslint-plugin-typescript-sort-keys": "^1.5.0",
-    "prettier": "^2.1.2",
-    "typescript": "^4.0.5"
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.2"
   }
 }
